@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: #143041;
+}
+
+body,
+form {
+  margin: 0 auto;
+}
+
+header {
+  background: #143041;
+  color: #fff;
+}
+
+header,
+section {
+  padding: 15px 0;
+}
+
+h1, h2 {
+  font-size: 1.1em;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section,
+form,
+footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  border-bottom: 4px solid #143041;
+}
+
+section p,
+label,
+select {
+  font-size: .9em;
+}
+
+section p, footer {
+  color: #a6a4a4;
+  line-height: 1.35;
+}
+
+/* ===================== FORM CONTENT ===================== */
+
+form {
+  text-align: left;
+  margin-top: 3px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+label {
+  color: #1e3c4f;
+}
+
+/* ------- Fieldset Top Borders */
+.contact,
+.newsletter {
+  border-top: 2px solid #143041;
+  padding: 30px 0;
+}
+
+
+
+/* ------- Display Text Seperate Lines */
+label:not(.options-label) {
+  display: block;
+}
+
+
+
+/* ------- Input Style */
+.contact input,
+select,
+#other,
+input[type="submit"] {
+  background: #f0f0f0;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.contact input,
+label,
+select,
+.options,
+#other {
+  margin-bottom: 15px;
+}
+
+input::placeholder {
+  font-size: .75em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 20px;
+}
+
+input[type="submit"] {
+  background: #52bab3;
+  color: #fff;
+  font-size: 1.2em;
+  height: 60px;
+}
+
+
+
+/* ------- Select & Option Style */
+select {
+  color: #a6a4a4;
+  padding-left: 15px;
+  outline: none;
+}
+
+option[disabled] {
+  color: #a6a4a4;
+  display: none;
+}
+
+
+
+/* ------- Newsletter Label & Input Margins */
+label:not([for]),
+label[for="other"] {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.newsletter label:first-of-type {
+  margin-top: 0;
+}
+
+.options {
+  margin-right: 10px;
+}
+
+
+/* ------- Input Focus Style */
+input:focus,
+select:focus,
+#other:focus {
+  outline: none;
+  border: 2px solid #184969;
+  padding: 10px;
+}
+
+
+
+/* ------- Overwrite */
+#zipcode,
+#other {
+  margin-bottom: 0;
+}
+
+#zipcode {
+  width: 50%;
+}
+
+#other {
+  height: 100px;
+}
+
+/* ===================== FOOTER ===================== */
+
+footer {
+  font-size: .75em;
+  font-style: italic;
+  padding: 30px 0 50px;
+}
+
+
+/* ===================== MEDIA QUERIES ===================== */
+
+@media (min-width: 768px) {
+
+  section {
+    padding: 30px 0;
+  }
+
+  section,
+  form,
+  footer {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  form {
+    margin-top: 3px;
+  }
+
+  .contact,
+  .newsletter {
+    padding: 50px 0;
+  }
+
+  .newsletter {
+    padding-bottom: 30px;
+  }
+
+  .contact label:not(.options-label) {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .contact input,
+  select {
+    width: 75%;
+  }
+
+  label[for="zipcode"] {
+    width: 25%;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #zipcode {
+    margin-right: auto;
+  }
+
+  footer {
+    padding: 35px 0 50px;
+  }
+
+
+}
