@@ -166,7 +166,11 @@ select:focus,
 #other:focus {
   outline: none;
   border: 2px solid #184969;
-  padding: 0 20px;
+}
+
+input:not([type="submit"]):focus,
+#other:focus {
+  padding: 20px;
 }
 
 input[type="submit"]:focus {
