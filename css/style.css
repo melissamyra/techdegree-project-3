@@ -218,13 +218,13 @@ footer {
     margin-top: 3px;
   }
 
+  footer {
+    padding: 35px 0 50px;
+  }
+
   .contact,
   .newsletter {
     padding: 50px 0;
-  }
-
-  .newsletter {
-    padding-bottom: 30px;
   }
 
   .contact label:not(.options-label) {
@@ -246,12 +246,12 @@ footer {
     justify-content: space-between;
   }
 
-  #zipcode {
-    margin-right: auto;
+  .newsletter {
+    padding-bottom: 30px;
   }
 
-  footer {
-    padding: 35px 0 50px;
+  #zipcode {
+    margin-right: auto;
   }
 
 
