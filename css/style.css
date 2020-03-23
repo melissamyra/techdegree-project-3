@@ -115,6 +115,7 @@ select,
 }
 
 input::placeholder {
+  color: #a6a4a4;
   font-size: .75em;
   font-style: italic;
   text-align: right;
@@ -165,12 +166,14 @@ input:not([type="submit"]):focus,
 select:focus,
 #other:focus {
   outline: none;
+  background: #e6e6e6;
   border: 2px solid #184969;
+  transition: .2s ease;
 }
 
 input:not([type="submit"]):focus,
 #other:focus {
-  padding: 20px;
+  padding: 10px;
 }
 
 input[type="submit"]:focus {
@@ -258,6 +261,7 @@ footer {
   }
 
   #zipcode {
+    width: 25%;
     margin-right: auto;
   }
 
