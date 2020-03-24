@@ -5,6 +5,7 @@
 }
 
 body {
+  background: linear-gradient(to bottom, #f4f4f4, #fff, #f4f4f4);
   font-family: 'Merriweather', serif;
   text-align: center;
   color: #143041;
@@ -17,12 +18,19 @@ form {
 
 header {
   background: #143041;
-  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 header,
 section {
   padding: 15px 0;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
 }
 
 h1, h2 {
@@ -50,9 +58,9 @@ section p, footer {
 }
 
 .container {
-  background: linear-gradient(to bottom, #f4f4f4, #fff 20%, #fff 80%, #f4f4f4);
-  width: 90%;
-  margin: 0 auto;
+  background: #fff;
+  padding: 0 25px;
+  margin: 73.56px auto 0;
 }
 
 /* ===================== FORM CONTENT ===================== */
@@ -75,6 +83,11 @@ legend {
 
 label {
   color: #1e3c4f;
+}
+
+label,
+input[type="submit"] {
+  cursor: pointer;
 }
 
 /* ------- Fieldset Top Borders */
