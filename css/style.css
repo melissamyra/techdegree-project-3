@@ -5,7 +5,6 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #f4f4f4, #fff, #f4f4f4);
   font-family: 'Merriweather', serif;
   text-align: center;
   color: #143041;
@@ -58,7 +57,7 @@ section p, footer {
 }
 
 .container {
-  background: #fff;
+  background: linear-gradient(to top, #f4f4f4, #fff 40%);
   padding: 0 25px;
   margin: 73.56px auto 0;
 }
